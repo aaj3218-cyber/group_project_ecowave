@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Logo_1.png?v=1730760401942"
+    />
+    <title>EcoWave Surfboards</title>
+    <link href="accessories.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page">
+    <!--     Offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <!--     Content  -->
+           <div id="w">
+        <header id="title">
+          <h1 id="carttitle">Your Shopping Cart</h1>
+        </header>
+        <div id="page">
+          <table id="cart">
+            <thead>
+              <tr>
+                <th class="first">Photo</th>
+                <th class="second">Qty</th>
+                <th class="third">Product</th>
+                <th class="fourth">Line Total</th>
+                <th class="fifth">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- shopping cart contents -->
+              <tr class="productitm">
+                <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+                <td>
+                  <div class="leash-container">
+                    <img
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/leash-de-surf-mdns-unlimited-long-knee.jpg?v=1732954048873"
+                      class="thumb"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    value="1"
+                    min="0"
+                    max="99"
+                    class="qtyinput"
+                  />
+                </td>
+                <td>Classic Surfboard Leash</td>
+                <td>$20.00</td>
+                <td>
+                  <span class="remove"
+                    ><img src="https://i.imgur.com/h1ldGRr.png" alt="X"
+                  /></span>
+                </td>
+              </tr>
+              <tr class="productitm">
+                <!-- http://www.amazon.com/Stuff-My-Cat-The-Book/dp/0811855384 -->
+                <td>
+                  <div>
+                    <img
+                      class="board-container"
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/wax.png?v=1732955923876"
+                      class="thumb"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    value="1"
+                    min="0"
+                    max="99"
+                    class="qtyinput"
+                  />
+                </td>
+                <td>Ultimate Surf Wax</td>
+                <td>$8.95</td>
+                <td>
+                  <span class="remove"
+                    ><img src="https://i.imgur.com/h1ldGRr.png" alt="X"
+                  /></span>
+                </td>
+              </tr>
+              <tr class="productitm">
+                <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
+                <td>
+                  <div>
+                    <img
+                      class="wetsuit-contianer"
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/2-side.jpg?v=1732957061129"
+                      class="thumb"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    value="1"
+                    min="0"
+                    max="99"
+                    class="qtyinput"
+                  />
+                </td>
+                <td>EcoWesuit, Black, Zipless</td>
+                <td>$75.00</td>
+                <td>
+                  <span class="remove"
+                    ><img src="https://i.imgur.com/h1ldGRr.png" alt="X"
+                  /></span>
+                </td>
+              </tr>
+              <tr class="productitm">
+                <!-- http://www.barnesandnoble.com/w/javascript-and-jquery-david-sawyer-mcfarland/1100405042 -->
+                <td>
+                  <div>
+                    <img
+                      class="book-container"
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/surf-book.webp?v=1732956752346"
+                      class="thumb"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    value="1"
+                    min="0"
+                    max="99"
+                    class="qtyinput"
+                  />
+                </td>
+                <td>An environmentally conscious guide to surfing</td>
+                <td>$27.50</td>
+                <td>
+                  <span class="remove"
+                    ><img src="https://i.imgur.com/h1ldGRr.png" alt="X"
+                  /></span>
+                </td>
+              </tr>
+
+              <!-- tax + subtotal -->
+              <tr class="extracosts">
+                <td class="light">Shipping &amp; Tax</td>
+                <td colspan="2" class="light"></td>
+                <td>$35.00</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="totalprice">
+                <td class="light">Total:</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="2"><span class="thick">$166.45</span></td>
+              </tr>
+
+              <!-- checkout btn -->
+              <tr class="checkoutrow">
+                <td colspan="5" class="checkout">
+                  <button id="submitbtn">Checkout Now!</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+          <!--       END Content -->
+      </div>
+    </div>
+    <!--     END Offcanvas -->
+    <!--     NavBar -->
+     <nav
+      class="navbar navbar-expand-sm fixed-top bg-black p-2 text-white bg-opacity-100"
+    >
+      <div class="container-fluid">
+        <!-- logo -->
+        <a href="index.html">
+          <img
+            src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Logo_1.png?v=1730760401942"
+            class="navbar-logo"
+        /></a>
+        <!-- ss button -->
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <!-- main navbar -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-button" href="surfboards.html">
+                SURFBOARDS
+              </a>
+              <ul class="dropdown-menu">
+                <div class="dropdown-row">
+                  <div>
+                    <div class="dropdown-column">
+                      <h4>ALL Surfboards</h4>
+                      <a href="surfboards.html" class="dropdown-button"
+                        >shortboards</a
+                      >
+                      <a href="surfboards.html" class="dropdown-button"
+                        >midlengths</a
+                      ><a href="surfboards.html" class="dropdown-button"
+                        >longboards</a
+                      ><a><hr /></a
+                      ><a href="surfboards.html" class="dropdown-button"
+                        >performance</a
+                      ><a href="surfboards.html" class="dropdown-button"
+                        >fishboards</a
+                      ><a href="surfboards.html" class="dropdown-button"
+                        >hybrids</a
+                      >
+                    </div>
+
+                    <div class="dropdown-column">
+                      <h4>Custom surfboards</h4>
+                      <a href="customboard.html" class="dropdown-button"
+                        >customize</a
+                      >
+                      <a href="Cart.html" class="dropdown-button"
+                        >Custome Order</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dropdown-image">
+                    <img
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/surfboard%20dropdown%202.jpg?v=1732995351928"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-button" href="accessories.html">
+                ACCESSORIES
+              </a>
+              <ul class="dropdown-menu">
+                <div class="dropdown-row">
+                  <div>
+                    <div class="dropdown-column">
+                      <h4>Leashes</h4>
+                      <a href="accessories.html" class="dropdown-button"
+                        >Yulex® Natural Rubber</a
+                      >
+                      <a href="accessories.html" class="dropdown-button"
+                        >Recycled Polyurethane</a
+                      ><a href="accessories.html" class="dropdown-button"
+                        >Recycled Ocean Plastic</a
+                      >
+                    </div>
+
+                    <div class="dropdown-column">
+                      <h4>BOARD WAX</h4>
+                      <a href="accessories.html" class="dropdown-button"
+                        >Matunas Surf Wax</a
+                      >
+                      <a href="accessories.html" class="dropdown-button"
+                        >Sticky Bumps Eco Wax</a
+                      >
+                    </div>
+
+                    <div class="dropdown-column">
+                      <h4>wetsuits</h4>
+                      <a href="accessories.html" class="dropdown-button"
+                        >Yulex® Natural Rubber</a
+                      >
+                      <a href="accessories.html" class="dropdown-button"
+                        >Recycled Liners</a
+                      ><a href="accessories.html" class="dropdown-button"
+                        >Limestone-Based Neoprene</a
+                      ><a href="accessories.html" class="dropdown-button"
+                        >Dope-Dyed Yarn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dropdown-image">
+                    <img
+                      src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Essential_Surf_Gear.webp?v=1732993027983"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="surfcamps.html">SURFCAMPS</a>
+            </li>
+          </ul>
+          <!-- login and cart -->
+          <ul class="navbar-nav ms-auto mb-lg-0 d-flex justify-content-center">
+            <a href="login.html" class="bi bi-person nav-diff-button invert">
+              <img
+                src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/person-fill.svg?v=1732823408213"
+              />
+            </a>
+            <a href="Cart.html" class="bi bi-cart nav-diff-button invert">
+              <img
+                src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/cart.svg?v=1732823418225"
+            /></a>
+          </ul>
+          <!-- customm surfboard -->
+          <ul class="navbar-nav">
+            <a href="customboard.html" class="custom-board-button">CUSTOM SURFBOARD</a>
+          </ul>
+        </div>
+        
+  <div class="side-navbar" id="navbarSupportedContent">
+    <br/>
+    <li class="toggle-submenu text-center" onclick="toggleSubmenu('surfboardsSubmenu')">Surfboards</li>
+    <br/>
+    <div class="submenu" id="surfboardsSubmenu">
+      <a href="surfboards.html?type=long">Shortboards</a>
+      <a href="surfboards.html?type=short">MidLengths</a>
+      <a href="surfboards.html?type=fish">Longboards</a>
+      <hr/>
+      <a href="surfboards.html?type=performance">Performance Surfboards</a>
+      <a href="surfboards.html?type=fish">Fishboards</a>
+      <a href="surfboards.html?type=fish">Hybrids</a>
+    </div>
+    <li class="toggle-submenu text-center" onclick="toggleSubmenu('accessoriesSubmenu')">Accessories</li>
+    <br/>
+    <div class="submenu" id="accessoriesSubmenu">
+      <a href="surfboards.html?type=long">Leashes</a>
+      <a href="surfboards.html?type=short">Board Wax</a>
+      <a href="surfboards.html?type=fish">Wetsuits</a>
+    </div>
+    <a class="toggle-submenu text-center" href="surfcamps.html">SurfCamps</a>
+              <!-- login and cart -->
+          <ul class="text-center">
+            <a href="login.html" class="bi bi-person nav-diff-button invert">
+              <img
+                src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/person-fill.svg?v=1732823408213"
+              />
+            </a>
+            <a href="Cart.html" class="bi bi-cart nav-diff-button invert">
+              <img
+                src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/cart.svg?v=1732823418225"
+            /></a>
+          </ul>
+          <!-- customm surfboard -->
+          <ul class="navbar-nav">
+            <a href="customboard.html" class="custom-board-button">CUSTOM SURFBOARD</a>
+          </ul>
+    </div>
+
+  <div class="overlay" id="overlay" onclick="toggleSideNavbar()"></div>
+
+      </div>
+    </nav>
+    <!--     END NavBar -->
+
+    <!--     main -->
+    <section>
+      <div class="container1">
+        <div class="sidebar">
+          <h3>Filter by Category</h3>
+          <form>
+            <label>
+              <input type="checkbox" name="category" value="Shortboards" />
+              Shortboards </label
+            ><br />
+            <label>
+              <input type="checkbox" name="category" value="Mid Lengths" />
+              Mid Lengths </label
+            ><br />
+            <label>
+              <input type="checkbox" name="category" value="Longboards" />
+              Longboards </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="Performance Surfboards"
+              />
+              Fishboards
+            </label>
+            <br />
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="Performance Surfboards"
+              />
+              Hybrids
+            </label>
+            <br />
+            <h3>Price Range</h3>
+            <label>
+              <input type="range" min="0" max="200" step="10" />
+              <span>Price: $0 - $200</span> </label
+            ><br />
+
+            <button type="submit">Apply Filters</button>
+          </form>
+        </div>
+
+        <!-- Main content: product grid -->
+        <div class="products">
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/BlueSurfmarvel.jpeg?v=1733104146755"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Blue Shortboard</h4>
+            <p>$229.99</p>
+           <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Tealsurdmarvel.jpeg?v=1733104151613"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Cyan Shortboard</h4>
+            <p>$229.99</p>
+           <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/midlength%201.jpg?v=1732995155782"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Mid Length Surfbord</h4>
+            <p>$229.99</p>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/midlength%201.jpg?v=1732995155782"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Mid Length Surfbord</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/midlength%201.jpg?v=1732995155782"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Mid Length Surfbord</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/tcss-20-loggerhead-honey.webp?v=1733113144605"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Longboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/tcss-20-loggerhead-honey.webp?v=1733113144605"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Longboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/perfomance%20surfboard%203.jpg?v=1732995169138"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Performance Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/perfomance%20surfboard%203.jpg?v=1732995169138"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Performance Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/perfomance%20surfboard%203.jpg?v=1732995169138"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Performance Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/fishboard%204.jpg?v=1732995151395"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Fishboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/fishboard%204.jpg?v=1732995151395"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Fishboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/fishboard%204.jpg?v=1732995151395"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Fishboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/carbon-front_1000x.webp?v=1733113469113"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Hybrid Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card" value="Longboards">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/carbon-front_1000x.webp?v=1733113469113"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Hybrid Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/carbon-front_1000x.webp?v=1733113469113"
+              alt="Eco-Friendly Board Wax"
+            />
+            <h4>Hybrid Surfboard</h4>
+            <p>$229.99</p>
+            <button><a href="Cart.html">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footer-background d-flex align-items-center justify-content-center"
+    >
+      <div class="container space-between" style="margin-bottom: 50px">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              src="https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Logo_1.png?v=1730760401942"
+            />
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-footer">ABOUT ECOWAVE</h5>
+            <hr class="hr-footer" />
+            <p class="change">Ride the wave, respect the ocean.</p>
+            <p class="change">
+              EcoWave combines performance with sustainability.
+            </p>
+            <p class="change">ecowave@gmail.com</p>
+            <p class="change">333-333-3333</p>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-footer">SUPPORT</h5>
+            <hr class="hr-footer" />
+            <p class="change">FAQ</p>
+            <p class="change">Careers</p>
+            <div class="change">
+              <a href="customboard.html">Find your perfect board</a>
+            </div>
+
+            <!--             is there a way to make this go to custom boards or surfboards section? -->
+            <p class="p-modified change">Contact</p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="text-footer">Social</h3>
+            <hr class="hr-footer" />
+            <div class="input-group mb-3 suscribe-btn">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon4">Subscribe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="accessories.js"></script>
+    <!--     end main -->
+  </body>
+</html>

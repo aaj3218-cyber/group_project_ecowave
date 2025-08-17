@@ -1,0 +1,768 @@
+.invert {
+  filter: invert(100%); /* This is the shopping cart/login icons color   */
+}
+.invert:hover {
+  filter: invert(60%); /* This is the shopping cart/login icons color   */
+}
+hr {
+  color: orange !important; /*   hr line found in the dropdowns */
+}
+.change{
+  color: white;
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
+h5 {
+   /* (Got Removed)Background color for demonstration */
+  padding: 5px 10px !important; /* Controls the spacing inside the background */
+  margin: 0 !important; /* Removes unnecessary outside spacing */
+  display: inline-block !important; /* Makes the background shrink to fit the text */
+  transition: all 0.3s ease;
+}
+.change:hover {
+  background-color: royalblue;
+  color: white;
+  transition: all 0.3s ease;}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+/* side navbar whem ss */
+.side-navbar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: black;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      overflow-y: auto;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .side-navbar.show {
+      left: 0;
+    }
+
+    .side-navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      border-bottom: 1px solid #444444;
+      transition: background 0.3s;
+    }
+
+   .submenu a {
+      border: none;
+    }
+    .side-navbar a:hover {
+      background: #555555;
+    }
+
+.submenu {
+      display: none;
+      padding-left: 1rem;
+      background: #444444;
+    }
+
+ 
+
+    .submenu.show {
+      display: block;
+    }
+
+    .toggle-submenu {
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      transition: background 0.3s;
+    }
+
+    .toggle-submenu:hover {
+      background: #555555;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+.navbar {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.navbar-logo {
+  position: relative;
+  height: 60px !important;
+  width: 60px !important;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  display:flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black !important;
+  width: 50rem;
+  height: 30rem;
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.dropdown-row{
+  width: 50rem;
+  height: 30rem;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Dropdown columns */
+.dropdown-column {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Column heading */
+.dropdown-column h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3cb371 !important;
+}
+
+/* Links inside dropdown */
+.dropdown-column a {
+  display: block;
+  color: #aaaaaa;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.dropdown-column a:hover {
+  color: #a88f59 !important;
+  transition: all 0.2s ease;
+}
+/* Image column */
+.dropdown-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.dropdown-image img {
+  max-width: 420px;
+  height: 220px;
+/*   border: 5px solid black; */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+}
+
+/* NAV BUTTONS */
+.nav-diff-button {
+  padding: 12px 24px;
+  margin-left: -25px;
+  margin-right: 0px !important;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 2px black;
+}
+.nav-button {
+  padding: 12px 24px;
+  margin-left: 30px;
+  margin-right: 0px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+/*   underline on navbuttons */
+.nav-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #3cb371;
+  transition: width 0.4s ease;
+}
+/*   underline expands */
+.nav-button:hover::after {
+  width: 100%;
+}
+
+/* CUSTOM TOOL */
+.custom-board-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black !important;
+  text-transform: uppercase;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  transition: all 0.3s ease;
+}
+.custom-board-button:hover {
+  background-color: black;
+  color: green !important;
+}
+
+/* cart */
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+html { overflow-y: scroll; }
+body {
+  display: flex;
+  flex-direction: column; /* Set body as a column layout */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #414141;
+  background: #caccf7 url('https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/surfing.jpg?v=1732951282853');
+  min-height: 100vh;
+  
+}
+
+::selection { background: #; }
+::-moz-selection { background: #; }
+::-webkit-selection { background: #; }
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+#carttitle{
+  color: white;
+}
+
+h1 {
+  font-family: 'Fredoka One', Helvetica, Tahoma, sans-serif;
+/*   text-shadow: 4px 2px 0 #a4d8d8;  This is a 3d effecr for the text*/
+  color: white;
+  font-size: 3.5em;
+  line-height: 1.1em;
+  padding: 20px 0;
+  font-weight: normal;
+  text-align: center;
+}
+/* a4d8d8 */
+
+.leash-container{
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.board-container{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.wetsuit-container{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+/* page structure */
+#w {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
+#title {
+  display: block;
+  width: 100%;
+  background: black;
+  padding: 20px 0;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+#page {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  
+}
+
+/** cart table **/
+#cart {
+  display: block;
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  font-size: 1.2em;
+  color: #444444;
+}
+#cart thead th {
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+#cart thead th.first {
+  width: 175px;
+  padding-left: 25px;
+}
+#cart thead th.second {
+  width: 45px;
+}
+#cart thead th.third {
+  width: 230px;
+  padding-left: 70px;
+}
+#cart thead th.fourth {
+  width: 130px;
+}
+#cart thead th.fifth {
+  width: 20px;
+}
+
+#cart tbody td {
+  text-align: center;
+  margin-top: 4px;
+}
+
+tr.productitm {
+  height: 65px;
+  line-height: 65px;
+  border-bottom: 1px solid #d7dbe0;
+}
+
+
+#cart tbody td img.thumb {
+  vertical-align: bottom;
+  border: 1px solid #ddd;
+  margin-bottom: 4px;
+}
+
+.qtyinput {
+  width: 33px;
+  height: 22px;
+  border: 1px solid #a3b8d3;
+  background: #dae4eb;
+  color: #616161;
+  text-align: center;
+}
+
+tr.totalprice, tr.extracosts {
+  height: 35px;
+  line-height: 35px;
+}
+tr.extracosts {
+  background: #e4edf4;
+}
+
+.remove {
+  /* http://findicons.com/icon/261449/trash_can?id=397422 */
+  cursor: pointer;
+  position: relative;
+  right: 12px;
+  top: 5px;
+}
+
+
+.light {
+  color: #888b8d;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.45);
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.thick {
+  color: #272727;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+
+/** submit btn **/
+tr.checkoutrow {
+  background: #cfdae8;
+  border-top: 1px solid #abc0db;
+  border-bottom: 2px solid #abc0db;
+}
+td.checkout {
+  padding: 12px 0;
+  padding-top: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+
+/* https://codepen.io/guvootes/pen/eyDAb */
+#submitbtn {
+  width: 150px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  font-family: Arial, Tahoma, sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  overflow: hidden;
+  border-bottom: 1px solid #0071ff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #66aaff), color-stop(100%, #4d9cff));
+  background-image: -webkit-linear-gradient(#66aaff, #4d9cff);
+  background-image: -moz-linear-gradient(#66aaff, #4d9cff);
+  background-image: -o-linear-gradient(#66aaff, #4d9cff);
+  background-image: linear-gradient(#66aaff, #4d9cff);
+}
+#submitbtn:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d9cff), color-stop(100%, #338eff));
+  background-image: -webkit-linear-gradient(#4d9cff, #338eff);
+  background-image: -moz-linear-gradient(#4d9cff, #338eff);
+  background-image: -o-linear-gradient(#4d9cff, #338eff);
+  background-image: linear-gradient(#4d9cff, #338eff);
+}
+#submitbtn:active {
+  border-bottom: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #338eff), color-stop(100%, #4d9cff));
+  background-image: -webkit-linear-gradient(#338eff, #4d9cff);
+  background-image: -moz-linear-gradient(#338eff, #4d9cff);
+  background-image: -o-linear-gradient(#338eff, #4d9cff);
+  background-image: linear-gradient(#338eff, #4d9cff);
+  -webkit-box-shadow: inset 0 1px 3px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 1px 3px 1px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px 3px 1px rgba(0,0,0,0.25);
+}
+
+/* footer */
+footer {
+  position: auto;
+  padding-top: 6rem;
+}
+.footer-background {
+  text-align: center;
+  background-color: #a4d8d8;
+  color: white;
+}
+.hr-footer {
+  color: green !important;
+}
+.text-footer {
+  color: sandybrown;
+}
+.suscribe-btn {
+  border: solid 2px royalblue !important;
+  border-radius: 9px;
+}
+.p-modified{
+  margin-top:20px;
+}.invert {
+  filter: invert(100%); /* This is the shopping cart/login icons color   */
+}
+.invert:hover {
+  filter: invert(60%); /* This is the shopping cart/login icons color   */
+}
+hr {
+  color: orange !important; /*   hr line found in the dropdowns */
+}
+.change{
+  color: white;
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
+h5 {
+   /* (Got Removed)Background color for demonstration */
+  padding: 5px 10px !important; /* Controls the spacing inside the background */
+  margin: 0 !important; /* Removes unnecessary outside spacing */
+  display: inline-block !important; /* Makes the background shrink to fit the text */
+  transition: all 0.3s ease;
+}
+.change:hover {
+  background-color: royalblue;
+  color: white;
+  transition: all 0.3s ease;}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.navbar {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.navbar-logo {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  display:flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black !important;
+  width: 50rem;
+  height: 30rem;
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.dropdown-row{
+  width: 50rem;
+  height: 30rem;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Dropdown columns */
+.dropdown-column {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Column heading */
+.dropdown-column h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: green !important;
+}
+
+/* Links inside dropdown */
+.dropdown-column a {
+  display: block;
+  color: #aaaaaa;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.dropdown-column a:hover {
+  color: #a88f59 !important;
+  transition: all 0.2s ease;
+}
+/* Image column */
+.dropdown-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.dropdown-image img {
+  max-width: 420px;
+  height: 220px;
+/*   border: 5px solid black; */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+}
+
+/* NAV BUTTONS */
+.nav-diff-button {
+  padding: 12px 24px;
+  margin-left: -25px;
+  margin-right: 0px !important;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 2px black;
+}
+.nav-button {
+  padding: 12px 24px;
+  margin-left: 30px;
+  margin-right: 0px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-button:hover {
+  border-color: transparent;
+}
+.nav-button:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+
+/* CUSTOM TOOL */
+.custom-board-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black !important;
+  text-transform: uppercase;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  transition: all 0.3s ease;
+}
+.custom-board-button:hover {
+  background-color: black;
+  color: green !important;
+}
+
+
+body {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  background-image: url('https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Hawaii.webp?v=1733159756028'); /* Replace with your wallpaper URL */
+  background-size: cover; /* Makes the wallpaper cover the entire screen */
+  background-repeat: no-repeat; /* Prevents the wallpaper from repeating */
+  background-position: center; /* Centers the wallpaper */
+  background-attachment: fixed; /* Optional: Keeps the background fixed during scroll */
+}

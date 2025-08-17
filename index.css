@@ -1,0 +1,783 @@
+/* This is the shopping cart/login icons color   */
+.invert {
+  filter: invert(100%);
+  transition: all 0.3s ease;
+}
+.invert:hover {
+  filter: invert(60%);
+  transition: all 0.3s ease;
+}
+/* h1 {
+  opacity: 0%;
+  height: 0px;
+  width: 0px;
+} */
+h1 {
+  font-size: 3rem !important;
+  color: #e2c178 !important;
+  padding-top: 30px !important;
+}
+
+.p-header {
+  font-size: 1rem !important;
+}
+.special {
+  background: linear-gradient(to right, #00ff87, #60efff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+row h2 {
+  color: white !important;
+  text-align: center;
+}
+h5 {
+  /* (Got Removed)Background color for demonstration */
+  padding: 5px 10px !important; /* Controls the spacing inside the background */
+  margin: 0 !important; /* Removes unnecessary outside spacing */
+  display: inline-block !important; /* Makes the background shrink to fit the text */
+  transition: all 0.3s ease;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+/* side navbar whem ss */
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  transition: 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.side-navbar.show {
+  left: 0;
+}
+
+.side-navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px solid #444444;
+  transition: background 0.3s;
+}
+
+.submenu a {
+  border: none;
+}
+.side-navbar a:hover {
+  background: #555555;
+}
+
+.submenu {
+  display: none;
+  padding-left: 1rem;
+  background: #444444;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.toggle-submenu {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+.toggle-submenu:hover {
+  background: #555555;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.show {
+  display: block;
+}
+/* navbar normal */
+.navbar {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+.navbar-logo {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black !important;
+  width: 50rem;
+  height: 30rem;
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.dropdown-row {
+  width: 50rem;
+  height: 30rem;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Dropdown columns */
+.dropdown-column {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Column heading */
+.dropdown-column h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #3cb371 !important;
+}
+
+/* Links inside dropdown */
+.dropdown-column a {
+  display: block;
+  color: #aaaaaa;
+  font-size: 12px !important;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.dropdown-column a:hover {
+  color: #a88f59 !important;
+  transition: all 0.2s ease;
+}
+/* Image column */
+.dropdown-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dropdown-image img {
+  max-width: 420px;
+  height: 220px;
+  /*   border: 5px solid black; */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+}
+
+/* NAV BUTTONS */
+.nav-diff-button {
+  padding: 12px 24px;
+  margin-left: -25px;
+  margin-right: 0px !important;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 2px black;
+}
+.nav-button {
+  padding: 12px 24px;
+  margin-left: 30px;
+  margin-right: 0px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white !important;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+/*   underline on navbuttons */
+.nav-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #3cb371;
+  transition: width 0.4s ease;
+}
+/*   underline expands */
+.nav-button:hover::after {
+  width: 100%;
+}
+
+/* CUSTOM TOOL */
+.custom-board-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black !important;
+  text-transform: uppercase;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  transition: all 0.3s ease;
+}
+.custom-board-button:hover {
+  background-color: black;
+  color: green !important;
+  transition: all 0.3s ease;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/Surf-ezgif.com-optiwebp.webp?v=1732822763152");
+  background-size: cover;
+}
+.content-section {
+  display: flex;
+  align-items: center;
+  /*   gap: 20px; */
+}
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+.content-text {
+  width: 50%;
+  font-size: 15px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-align: center;
+  color: #a88f59;
+}
+.content-text h1 {
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #a88f59;
+  cursor: default;
+}
+.content-text p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white !important;
+  cursor: default;
+  margin-top: 15px;
+}
+.card1 {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0%;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.card2 {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0%;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.card3 {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0%;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Featured title css */
+.featured-title {
+  text-align: center;
+  font-size: 3rem !important;
+  color: #e2c178 !important;
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffeb3b, #ff8c00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.title-customized {
+  font-size: 3rem !important;
+  color: #e2c178;
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(to right, #45bf55, #b5e655);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.donate-title {
+  font-size: 3rem !important;
+  color: #e2c178 !important;
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(to right, #45bf55, #b5e655);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.auto-show {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0%;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+body {
+  width: auto !important;
+}
+
+/* 3 cards */
+.three-cards {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  margin-top: 100px !important;
+  margin-bottom: 100px;
+  height: auto;
+  width: auto;
+}
+.card1,
+.card2,
+.card3 {
+  margin: 30px;
+  height: 400px !important;
+  width: 350px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.card1 {
+  background-image: url("https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/surfboards-go.jpg?v=1732923647713");
+  background-size: cover;
+}
+
+.card2 {
+  background-image: url("https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/wetsuit2.jpg?v=1732936186091");
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+.card3 {
+  background-image: url("https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/ba084f7c-8d49-4988-aac2-ad93a19e9360.image.png?v=1732923496212");
+  background-size: cover;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 25px !important;
+  letter-spacing: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 0 20px black;
+}
+/*   underline on navbuttons */
+.card-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #00ff87, #60efff);
+  transition: width 0.4s ease;
+}
+/*   underline expands */
+.card-title:hover::after {
+  width: 100%;
+}
+.btn-three-cards {
+  margin-bottom: 40px;
+}
+
+/* The images in the carousel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel images */
+.carousel-images img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.side-bar {
+  width: 50px;
+  height: 100vh;
+  background: linear-gradient(#00545d, #000729);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bubbles img {
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+  width: 20px;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+span {
+  color: green;
+}
+h3 {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* custom css */
+.custom {
+  padding: 8rem;
+  /* #D9B495   */
+}
+hr {
+  color: orange !important;
+}
+.custom-border {
+  border: solid blue 5px;
+  border-bottom: solid #0d6efd 5px;
+  border-top: #0000ff00 !important;
+  border-left: #0000ff00 !important;
+}
+.custom-border2 {
+  border: solid #588157 5px;
+  border-bottom: solid #0d6efd 5px;
+  border-top: #0000ff00 !important;
+  border-left: #0000ff00 !important;
+}
+
+.btn {
+  background-color: #dae8fc !important;
+  /* Or maybe it should stay btn-primary or #ebf4f7 */
+}
+.title-customized {
+  font-size: 2rem;
+}
+.text-customized {
+  font-size: 1.1rem;
+}
+/* END of custom css */
+
+/* Colors */
+.sand {
+  background-color: #f8e0be;
+}
+.darker-sand {
+  background-color: #d9b495;
+}
+.yellowish-sand {
+  background-color: #ffdd9b;
+}
+.light-blue {
+  background-color: #ebf4f7;
+}
+.sky-blue {
+  background-color: #d5deef;
+}
+.eco-green {
+  background-color: #588157;
+}
+.page {
+  background-color: white;
+  /*  options: white */
+}
+/* END Colors */
+
+/* Custom CSS to make the carousel smaller */
+#carouselExample {
+  max-width: 600px; /* Set the max width for the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+#carouselExample .carousel-inner img {
+  width: 100%; /* Make sure images take up the full width of the carousel */
+  height: 600px; /* Set a fixed height for the images */
+  object-fit: cover;
+}
+
+/* surfboard section */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height to vertically center */
+}
+.card {
+  margin: 10px; /* Adds space between cards */
+}
+/* end of surfboard section */
+
+/* surboard section above custom surfboards */
+.background-surf {
+  background-color: #a4d8d8;
+}
+/* wave modifications */
+.wave-modif {
+  height: 200px;
+}
+.space-wave {
+  margin-bottom: -100px !important;
+}
+.space-wave2 {
+  margin-top: -100px !important;
+}
+/* wave modifications end */
+
+/* surboard section above custom surfboards */
+/* buttons */
+.btn-primary {
+  background-color: #77dd77 !important;
+  border: transparent !important;
+  width: auto;
+  padding: 10px;
+  font-size: 15px !important;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #5ded31 !important;
+  transition: all 0.3s ease;
+}
+
+/* donation section */
+.donation-background {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.global/3ead7f68-ded6-4c94-a1e3-372b680bbc16/surfboard-ocean-wave-h6skjamnvfpz3xcs.jpg?v=1733620870313");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+.form-row {
+  gap: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.modified-card {
+  margin: 20px;
+}
+.modified-bg-card {
+  background-color: transparent !important;
+  border: solid transparent !important;
+}
+.donate-hr {
+  opacity: 70%;
+}
+.donate-title {
+  color: blue;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.donate-text {
+  color: lightblue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.small-donate-text {
+  font-size: 1rem;
+}
+/* END donation section */
+
+/* footer */
+footer {
+  padding-top: 6rem;
+}
+.footer-background {
+  text-align: center;
+  background-color: #a4d8d8;
+  color: white;
+}
+.hr-footer {
+  color: green !important;
+}
+.text-footer {
+  color: sandybrown;
+}
+.suscribe-btn {
+  border: solid 2px royalblue !important;
+  border-radius: 9px;
+}
+.p-modified {
+  margin-top: 20px;
+}
+.carousel-caption h5,
+.carousel-caption p {
+  color: black !important;
+}
+.carousel-control-next-icon {
+  color: black !important;
+}
+.change {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+.change:hover {
+  background-color: royalblue;
+  color: white;
+  transition: all 0.3s ease;
+}
+.donate-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
